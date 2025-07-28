@@ -94,7 +94,7 @@ const main = async () => {
         console.log(colors.white(`\n🆕 Sending transaction ${i} to: ${receiverAddress}`));
 
         const amountToSend = ethers.parseUnits(
-          (Math.random() * (0.0000001 - 0.00000001) + 0.00000001).toFixed(10).toString(),
+          (Math.floor(Math.random() * 2) + 2).toString(),
           "ether"
         );
 
